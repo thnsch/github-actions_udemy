@@ -3,6 +3,9 @@ on: push
 jobs:
    test:
       runs-on: ubuntu-latest
+      defaults:
+        run:
+          working-directory: ./second-action-react-demo
       steps:
          - name: Get code
            uses: actions/checkout@v4
