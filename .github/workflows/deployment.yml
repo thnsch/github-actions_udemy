@@ -19,6 +19,9 @@ jobs:
          run: npm test
   deploy:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./second-action-react-demo
     steps:
       - name: Get code
         uses: actions/checkout@v4
